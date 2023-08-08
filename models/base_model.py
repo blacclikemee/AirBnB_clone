@@ -4,9 +4,10 @@
 import uuid
 from datetime import datetime
 
+
 class BaseModel:
     """Implementation of Class BaseModel"""
-    def __init__(self, id, created_at, updated_at):
+    def __init__(self):
         """
             Initialises the BaseModel attributes
 
@@ -24,14 +25,24 @@ class BaseModel:
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
-    save(self):
-        """Method to save the updated_at"""
+    def _str_(self):
+        """
+            Function that prints  print: [<class name>] (<self.id>)
+            <self.__dict__>
+        """
+        return"[{}] ({}) {}".\
+            format(type(self).__name__, self.id, self.__dict__)
+
+    def save(self):
+        """Method that saves the updated time"""
+
         self.updated_at = datetime.now()
-        storage.save()
 
-    to_dict(self):
-        """returns a dictionary containing all keys/values
-        of __dict__ of the instance"""
+    def to_dict(self):
+        """Returns a dictionary representation of an instance."""
 
-
-
+        my_dict = self.__dict__.copy()
+        my_dict["__class__"] = type(self).__name__
+        my_dict["created_at"] = my_dict["created_at"].isoformat()
+        my_dict["updated_at"] = my_dict["updated_at"].isoformat()
+        return my_dict
