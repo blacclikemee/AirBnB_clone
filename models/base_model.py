@@ -7,7 +7,7 @@ from datetime import datetime
 
 class BaseModel:
     """Implementation of Class BaseModel"""
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """
             Initialises the BaseModel attributes
 
@@ -25,7 +25,14 @@ class BaseModel:
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
-    def _str_(self):
+        #Handling assigning of kwargs if kwargs is present
+        for key, value in kwargs.items():
+            if key == "created_at" or key == "updated_at":
+                setattr(self, key, datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f"))
+            else:
+                setattr(self, key, value)
+
+    def __str__(self):
         """
             Function that prints  print: [<class name>] (<self.id>)
             <self.__dict__>
