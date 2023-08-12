@@ -280,7 +280,7 @@ Alternatively, you can specify a single test file to run at a time:
 $ python3 unittest -m tests/test_console.py
 ```
 
-## Authors :black_nib:
+## Authors :
 * **Favour A. Uzochukwu** <[Ada](https://github.com/Avvyyy)>
 * **Noble Komla Attah** <[Noble](https://github.com/blacclikemee)>
 
