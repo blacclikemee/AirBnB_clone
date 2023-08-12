@@ -11,14 +11,14 @@
 
 ---
 
-## Description :house:
+## Description
 
 ArBnB is a complete web application, integrating database storage, 
 a back-end API, and front-end interfacing in a clone of AirBnB.
 
 The project currently only implements the back-end console.
 
-## Classes :cl:
+## Classes 
 
 AirBnB utilizes the following classes:
 
@@ -29,7 +29,7 @@ AirBnB utilizes the following classes:
 | **PUBLIC CLASS ATTRIBUTES** | | | `email`<br>`password`<br>`first_name`<br>`last_name`| `name` | `state_id`<br>`name` | `name` | `city_id`<br>`user_id`<br>`name`<br>`description`<br>`number_rooms`<br>`number_bathrooms`<br>`max_guest`<br>`price_by_night`<br>`latitude`<br>`longitude`<br>`amenity_ids` | `place_id`<br>`user_id`<br>`text` | 
 | **PRIVATE CLASS ATTRIBUTES** | | `file_path`<br>`objects` | | | | | | |
 
-## Storage :baggage_claim:
+## Storage 
 
 The above classes are handled by the abstracted storage engine defined in the 
 [FileStorage](./models/engine/file_storage.py) class.
@@ -40,7 +40,7 @@ any class instances stored in the JSON file `file.json`. As class instances are
 created, updated, or deleted, the `storage` object is used to register 
 corresponding changes in the `file.json`.
 
-## Console :computer:
+## Console 
 
 The console is a command line interpreter that permits management of the backend 
 of AirBnB. It can be used to handle and manipulate all classes utilized by 
@@ -265,7 +265,7 @@ m', 'first_name': 'Holberton', 'updated_at': datetime.datetime(2019, 2, 17, 21,
 (hbnb) 
 ```
 
-## Testing :straight_ruler:
+## Testing 
 
 Unittests for the HolbertonBnB project are defined in the [tests](./tests) 
 folder. To run the entire test suite simultaneously, execute the following command:
@@ -280,7 +280,7 @@ Alternatively, you can specify a single test file to run at a time:
 $ python3 unittest -m tests/test_console.py
 ```
 
-## Authors :
+## Authors 
 * **Favour A. Uzochukwu** <[Ada](https://github.com/Avvyyy)>
 * **Noble Komla Attah** <[Noble](https://github.com/blacclikemee)>
 
