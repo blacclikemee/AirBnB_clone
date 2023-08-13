@@ -1,4 +1,3 @@
-89% of storage used … If you run out, you won't have enough storage to create, edit and upload files. Get 100 GB of storage for ₦390.00 ₦200.00 for 1 month.
 #!/usr/bin/python3
 """Defines unittests for console.py.
 Unittest classes:
