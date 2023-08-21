@@ -1,0 +1,128 @@
+/* Stylings for the places section */
+
+.places {
+	justify-content: center;
+	align-items: center;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.places h1{
+    font-size: 30px;
+}
+
+.places>div{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.places article{
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: #FF5a5F solid 1px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.places article h2{
+    font-size: 30px;
+}
+
+.price_by_night {
+    display: flex;
+	align-items: center;
+	min-width: 60px;
+    width: 60px;
+	height: 60px;
+	font-size: 30px;
+	color: #ff5a5f;
+	border: 4px solid #ff5a5f;
+	border-radius: 50%;
+	padding:5px;
+	justify-content: center;
+    text-align: center;
+    position: relative;
+    bottom: 3em;
+    left: 10em;
+    z-index: -1;
+}
+
+.price_by_night p{
+    text-align: center;
+}
+
+.information{
+    height: 80px;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.max_guest{
+    background-image: url(../images/guests\ icon.png);
+    background-repeat: no-repeat;
+}
+
+.number_rooms{
+    background-image: url(../images/rooms\ icon.png);
+    background-repeat: no-repeat;
+}
+
+.number_bathrooms{
+    background: url(../images/bathroom\ icon.png) no-repeat;
+}
+
+.user,
+.description{
+    text-align: justify;
+}
+
+
+/* Styling for the additional info for the place article -.amenities- */
+article .amenities,
+article .reviews{
+    margin-top: 40px;
+    text-align: justify;
+}
+
+article .amenities h2,
+article .reviews h2{
+    font-size: 16px;
+    border-bottom: 1px solid #dddddd;
+}
+
+article .amenities li{
+    text-indent: 30px;
+}
+
+article .amenities li:first-child{
+    background: url(../images/icon_tv.png) no-repeat;
+    background-size: contain;
+    background-origin: content-box; 
+}
+
+article .amenities li:nth-child(2){
+    background: url(../images/icon_wifi.png) no-repeat;
+    background-size: contain;
+    background-origin: content-box; 
+}
+
+article .amenities li:nth-child(3){
+    background: url(../images/icon_pets.png) no-repeat;
+    background-size: contain;
+    background-origin: content-box; 
+}
+
+/* Styling for the reviews */
+article .reviews h3{
+    font-size: 14px;
+}
+
+article .reviews p{
+    font-size: 12px;
+}
